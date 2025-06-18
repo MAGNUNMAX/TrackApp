@@ -1,0 +1,198 @@
+:root{
+   --Blanco: #FFFFFF ;  /* Fondo principal. */
+
+   --BackgrounColor:#0f021f;
+
+   --BackgrounBase:  #1f1b24;
+
+   --inputBackground:  #141435;
+
+   --backgroundInnerBox: #1B002E;  /* color cuadro interior */
+
+   --innerBoxBorder: #450d6d;   /* color del borde interior  */
+
+   --borderInput:  #3b3b99;
+
+   --celesteneon: #00F0FF;  /* Tracking */
+
+   --verde-azuladobrillante: #00FFD9;  /* Código de rastreo (XYZ123456789) */
+
+   --verdementaneon: #00FFAA;  /* In Transit */
+
+   --griscelesteclaro: #B0C4DE;  /* Texto informativo (Atlanta Logistics Center, Estimated delivery, fecha) */
+
+   --verdementaclaro: #00FFCC;  /* Smartphone */
+
+   --azulcelesteclaro: #00E5FF; /* Icono de campana */
+
+   --Negro:#000000; /*  Texto y detalles oscuros. */
+
+   --Azulbrillante:#007AFF; /*  Botones destacados y elementos interactivos. */
+
+   --Grisclaro:#F4F4F4; /* Secciones de fondo secundario. */
+
+   --Grismedio:#C7C7C7; /* Líneas divisorias y bordes sutiles. */
+
+   --Rojo:#FF3B30 ;/*  Indicadores de error o estado crítico. */
+
+   --Verdebrillante:#4CD964; /* Confirmaciones o estados positivos. */
+
+   --Dorado:#FFD700 ;/* Elementos resaltados o de notificación. */
+
+}
+
+
+body{
+    /*  #1f1b24 */
+   background-color: var(--BackgrounBase);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#mainBox{
+   width: 55em;
+   height: 55em;
+   background-image: url(../img/background_imag.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   position: relative;
+}
+
+#appTitle{
+   color: var(--celesteneon);
+   font-size: 4.5rem;
+   font-family:Arial, Helvetica, sans-serif;
+   position: absolute;
+   left: 20%;
+   top: 20px;
+}
+
+#trackBox{
+   border: 1px solid var(--innerBoxBorder);
+   border-radius: 15px;
+   width: 33em;
+   height: 25em;
+   padding: 0px;
+   position: relative;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -1px);
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   background-color: var(--backgroundInnerBox);
+}
+
+#innerTitle{
+   font-size: 2.5rem ;
+   font-family: Arial, Helvetica, sans-serif;
+   color: var(--celesteneon);
+   margin: 10px;
+}
+
+
+#inputBox {
+    position: relative;
+    width: 300px;
+    
+  }
+  #inputId {
+    width: 100%;
+    padding: 8px 80px 8px 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius:15px;
+    background-color: var(--inputBackground);
+    border: 2px solid var(--borderInput);
+    outline: none;
+    color: var(--verde-azuladobrillante);
+  }
+
+  input:focus {
+   background-color: var(--inputBackground); 
+  }
+
+  input:-webkit-autofill {
+    background-color: var(--inputBackground) !important;
+    -webkit-box-shadow: 0 0 0 1000px var(--inputBackground) inset !important;
+    -webkit-text-fill-color: var(--verde-azuladobrillante) !important;
+   }
+
+  #buttonId {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 70px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30%;
+  }
+  #buttonId:hover {
+    background-color: #0056b3;
+  }
+
+  #status{
+   font-size: 3rem;
+   margin: 0px;
+   padding: 0px;
+   color: var(--verdementaneon);
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 500;
+  }
+
+  #location {
+   font-size: 1.5em;
+   font-family: Arial, Helvetica, sans-serif;
+   color: var(--griscelesteclaro);
+  }
+
+  #estimate{
+     font-size: 1.5em;
+   font-family: Arial, Helvetica, sans-serif;
+   color: var(--griscelesteclaro);
+  }
+  
+  @media(max-width : 800px){
+   #mainBox{
+   width: 33em;
+   height: 55em;
+   background-image: url(../img/background_imag.png);
+   background-position: center;
+}
+
+#appTitle{
+   font-size: 2.5rem;
+   position: absolute;
+   left: 35%;
+}
+
+#innerTitle{
+   font-size: 1.5rem ;
+}
+
+#status{
+font-size: 2rem;
+}
+
+#location {
+font-size: 1em;
+}
+
+#estimate{
+   font-size: 1em;
+}
+
+  }
+
+  
+  

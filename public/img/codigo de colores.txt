@@ -1,0 +1,15 @@
+#FFFFFF (Blanco) – Fondo principal.
+
+#000000 (Negro) – Texto y detalles oscuros.
+
+#007AFF (Azul brillante) – Botones destacados y elementos interactivos.
+
+#F4F4F4 (Gris claro) – Secciones de fondo secundario.
+
+#C7C7C7 (Gris medio) – Líneas divisorias y bordes sutiles.
+
+#FF3B30 (Rojo) – Indicadores de error o estado crítico.
+
+#4CD964 (Verde brillante) – Confirmaciones o estados positivos.
+
+#FFD700 (Dorado) – Elementos resaltados o de notificación.
